@@ -194,6 +194,21 @@ module RailsI18nManager
       redirect_to url, notice: "Translated #{translated_count} of #{total_missing} total missing translations"
     end
 
+    def new
+      @translation_key = TranslationKey.new
+    end
+
+    def create
+      @translation_key = TranslationKey.new(create_params)
+
+      if @translation_key.save
+        redirect_to translation_path(@translation_key[:id]), notice: "Create success."
+      else
+        flash.now.alert = "Create failed."
+        render :new
+      end
+    end
+    
     private
 
     def get_translation_key
