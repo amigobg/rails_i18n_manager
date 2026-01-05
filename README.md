@@ -1,5 +1,5 @@
 # Rails I18n Manager
-> A complete translation editor and workflow
+> A complete translation editor and workflow + option to create a new translation key from UI
 
 <a href="https://badge.fury.io/rb/rails_i18n_manager" target="_blank"><img height="21" style='border:0px;height:21px;' border='0' src="https://badge.fury.io/rb/rails_i18n_manager.svg" alt="Gem Version"></a>
 <a href='https://github.com/westonganger/rails_i18n_manager/actions' target='_blank'><img src="https://github.com/westonganger/rails_i18n_manager/actions/workflows/test.yml/badge.svg" style="max-width:100%;" height='21' style='border:0px;height:21px;' border='0' alt="CI Status"></a>

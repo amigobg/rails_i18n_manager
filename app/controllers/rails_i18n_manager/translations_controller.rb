@@ -210,6 +210,11 @@ module RailsI18nManager
     end
     
     private
+    
+    def create_params
+      params.require(:translation_key).permit(:key, :translation_app_id)
+    end
+
 
     def get_translation_key
       @translation_key = TranslationKey.includes(:translation_values).find_by!(id: params[:id])
